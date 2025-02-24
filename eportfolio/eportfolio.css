@@ -19,17 +19,18 @@ body{
 }
 
 header{
-    margin-top: 20px;
-    position: fixed;
+    margin-top:none;
+    position: fixed;    /*para hindi sumunod sa baba yung header */
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: transparent;
+    background-color: rgb(6, 6, 70);
     filter: drop-shadow(10px);
     display: flex;
     justify-content:space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .logo{
@@ -107,7 +108,8 @@ section{
     justify-content: center;
     align-items: center;
     gap: 80px;
-    background-color: rgb(255, 255, 255);   /*background black kanina*/
+    background-color: rgb(255, 255, 255);   /*background black kanina */
+    
 }
 
 .home .home-content h1{
@@ -128,6 +130,7 @@ span{
 
 .home-img{
     border-radius: 50%;
+    
 }
 
 
@@ -167,4 +170,131 @@ span{
     background-color: rgb(7, 7, 129);
     box-shadow: 0 0 50px rgb(168, 143, 0);
 
+}
+
+
+.aboutme-background{
+    background-color: rgb(8, 8, 78);
+    /* min-height: 100vh;
+    padding: 5rem 9% 5rem; */
+}
+
+.about-container{
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    
+
+}
+
+.aboutme1{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size:40px;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.aboutme1:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+
+    
+}
+
+.aboutme{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    display: inline-block;
+    text-align: center;
+    padding: 30px 20px;
+    font-size:20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 90rem;
+
+}
+
+.aboutme:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+
+.education-background{
+    background-color: white;
+}
+
+.education-container{
+    grid-template-rows: 1fr 1fr .5fr;
+    display: grid;
+    justify-content: center;
+  
+    
+}
+
+
+.education-title{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size:40px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    /* width: 90rem; */  
+    background-color: rgb(8, 8, 78); 
+
+}
+
+
+.tertiary{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    text-align: center;
+    padding: 30px 20px;
+    font-size:20px;
+    margin: auto;
+
+    border-radius: 50px;
+    width: 90rem;
+    background-color: rgb(8, 8, 78);
+}
+.secondary,
+.primary{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    text-align: center;
+    padding: 30px 20px;
+    font-size:20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 90rem;
+    background-color: rgb(8, 8, 78);
+}
+
+
+
+.education-title:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer; 
+}
+
+.tertiary:hover,
+.secondary:hover,
+.primary:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
 }
