@@ -12,6 +12,7 @@
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -63,7 +64,7 @@ nav a:active {
     border-bottom: 3px solid rgb(168, 143, 0);
 }
 
-@media(max-width:995px){
+@media(max-width:995px){                                                              /* from yt lang po yung @media*/
     nav{
         position: absolute;
         top: 100%;
@@ -172,16 +173,19 @@ span{
 
 }
 
+p{
+    font-size: 14px;
+}
 
 .aboutme-background{
     background-color: rgb(8, 8, 78);
-    /* min-height: 100vh;
-    padding: 5rem 9% 5rem; */
+
 }
 
 .about-container{
     grid-template-rows: 1fr 1fr;
     display: grid;
+    padding-top: 100px;
     
 
 }
@@ -196,6 +200,7 @@ span{
     margin: auto;
     border-radius: 50px;
     margin-top: 50px;
+    transition: .5s;
 }
 
 .aboutme1:hover{
@@ -217,6 +222,7 @@ span{
     margin-top: 30px;
     border-radius: 50px;
     width: 90rem;
+    transition: .5s;
 
 }
 
@@ -251,7 +257,7 @@ span{
     margin: auto;
     margin-top: 20px;
     border-radius: 50px;
-    /* width: 90rem; */  
+    transition: .5s; 
     background-color: rgb(8, 8, 78); 
 
 }
@@ -264,7 +270,7 @@ span{
     padding: 30px 20px;
     font-size:20px;
     margin: auto;
-
+    transition: .5s;
     border-radius: 50px;
     width: 90rem;
     background-color: rgb(8, 8, 78);
@@ -281,6 +287,7 @@ span{
     border-radius: 50px;
     width: 90rem;
     background-color: rgb(8, 8, 78);
+    transition: .5s;
 }
 
 
@@ -297,4 +304,73 @@ span{
     transform: scale(1.2);
     transition: .5s;
     cursor: pointer;
+}
+
+
+.contact-container{
+    display: grid;
+    justify-content: center;
+    padding-top: 150px
+
+}
+
+
+.contact-me{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size:40px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: .5s; 
+    background-color: rgb(8, 8, 78); 
+}
+
+.contact-no{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size:20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: .5s; 
+    background-color: rgb(8, 8, 78); 
+    margin-top: 50px;
+}
+
+.my-socials{
+    color: white;
+    border:solid 3px rgb(168, 143, 0);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size:20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: .5s; 
+    background-color: rgb(8, 8, 78); 
+    margin-top: 50px;
+}
+
+
+.contact-me:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer; 
+
+}
+
+.contact-no:hover,
+.my-socials:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+
 }
